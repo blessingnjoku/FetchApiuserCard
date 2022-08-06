@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import "./App.css";
 import Users from "./pages/Users";
 import { BrowserRouter, Routes, Route } from "react-router-dom";

@@ -13,8 +13,8 @@ const Profile = () => {
   };
   useEffect(() => {
     getUserProfile();
-  }, []);
-  if (profile == []) {
+  }, [profile]);
+  if (profile === []) {
     return <div>Loading...</div>;
   }
 

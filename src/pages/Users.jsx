@@ -4,7 +4,6 @@ import "../App.css";
 
 function Users() {
   const [person, setPersons] = useState([]);
-  const [loading, setLoading] = useState(true);
 
   const getUser = async () => {
     const res = await fetch("https://api.github.com/users");
@@ -15,7 +14,7 @@ function Users() {
   useEffect(() => {
     getUser();
   }, []);
-  if (person == []) {
+  if (person === []) {
     return <div>Loading...</div>;
   }
 
