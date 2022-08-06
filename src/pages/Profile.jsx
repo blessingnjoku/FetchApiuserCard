@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const Profile = () => {
   const { id } = useParams();
@@ -13,7 +13,7 @@ const Profile = () => {
   };
   useEffect(() => {
     getUserProfile();
-  }, [profile]);
+  });
   if (profile === []) {
     return <div>Loading...</div>;
   }
